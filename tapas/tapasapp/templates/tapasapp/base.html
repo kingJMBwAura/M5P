@@ -20,14 +20,24 @@
 
         </nav>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
+                <div class="col-2 min-vh-100 bg-white">
+                    <ul class="ps-4" style="list-style-type: disc !important;">
+                        {% block sidebar %}{% endblock %}
+                    </ul>
+                </div>
 
-                {% block content %}
-                {% endblock %}
+                <div class="container">
+                    <div class="row">
 
+                        {% block content %}
+                        {% endblock %}
+
+                    </div>
+                </div>  
             </div>
-        </div>  
+        </div>
         
         <footer class="footer bg-custom" style="background-color: #590404;">
 
