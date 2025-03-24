@@ -13,28 +13,23 @@
     <body>
         <nav class="navbar navbar-dark bg-custom mb-3 sticky-top" style="background-color: #590404;">
             <div class="container-fluid">
-                <a class="navbar-brand mb-0" href="{% url 'view_menu' %}">My Tapas Menu</span> </a>
-                <a href="" style="color:white"><i class="material-icons">add</i></a>
-    
+                <a class="navbar-brand mb-0">My Tapas Menu</a>
+                <a href="{% url 'add_menu' %}" style="color:white"><i class="material-icons">add</i></a>
             </div>
-
         </nav>
 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-2 min-vh-100 bg-white">
                     <ul class="ps-4" style="list-style-type: disc !important;">
-                        {% block sidebar %}{% endblock %}
+                        {% block sidebar %}
+                        {% endblock %}
                     </ul>
                 </div>
-  
-
                 <div class="col-10">
                     <div class="row justify-content-center">
-
                         {% block content %}
                         {% endblock %}
-
                     </div>
                 </div>
             </div>

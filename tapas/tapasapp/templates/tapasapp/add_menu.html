@@ -3,12 +3,11 @@
 
 {% block sidebar %}
     <li class="nav-item">
-        <a class="nav-link">Back to main</a>
+        <a class="nav-link" href="{% url 'view_menu' %}">Back to main</a>
     </li>
 {% endblock %}
 
 {% block content %}
-
 <div class="container mt-5" style="max-width: 650px; margin-left: 10px;">  
     <div class="card shadow-sm">
 
@@ -41,5 +40,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
